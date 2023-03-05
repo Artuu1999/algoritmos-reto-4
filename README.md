@@ -1,5 +1,6 @@
-# Reto #4
-Algoritmos
+# Reto #4 Algoritmos
+
+Espero que se encuentren excelente estimados lectores, a continuación se plantea mediante algortimos el método de sucesiones para hallar las raices cuadradas de un valor real y la forma de encontrar números primos, para ello se emplearon herramientas fundamentales en el ámbito de la programación, tales como el pseudocódigo y los diagramas de flujo.
 
 ## Números primos hasta n
 
@@ -77,4 +78,11 @@ flowchart TD
     G --> U[se resta con el residuo]
     U --> H{Hay residuo?}
     H --> |no| P
-    H --> |si| F 
+    H --> |si| F
+```
+
+## NOTA:
+Este repo es simplemente una hipótesis para hallar mediante el uso de algoritmos (pseudocódigo y diagramas de flujo) números primos y raíces cuadradas, no obstante si encuentras un error, una incoherencia o quieres hacer una recomendación no dudes en hacermelo saber.
+   
+   "Lo mejor que se puede compartir es el conocimiento"
+         - Alain Ducasse
