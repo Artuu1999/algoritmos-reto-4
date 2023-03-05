@@ -25,3 +25,17 @@ fin
 ```
 
 Ahora el algoritmo presentado anteriormente para hallar números primos se mostrará en forma de diagrama de flujo
+```mermaid
+flowchart TD
+    A(Hallar número primo) --> B[n = 2]
+    B --> C[i < n]
+    C --> D{i < n**0.5}
+    D --> |no| P(fin)
+    D --> |si| E[i = 2]
+    E --> H{residuo de n/i = 0}
+    H --> |no| L[n es un número primo]
+    H --> |si| K[n no es un número primo]
+    C --> M[n = n + 1]
+    L --> M
+    K --> M
+```
