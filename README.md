@@ -1,15 +1,27 @@
-# algoritmos-reto-4
+# Reto #4
+Algoritmos
 
-```mermaid
-graph TD
-A[Números primos hasta n] --> B{Is it?}
-B -- Yes --> C[OK]
-C --> D[Rethink]
-D --> B
-B -- No ----> E[End]
+## Números primos hasta n
+
+A continuación se presentará el pseudocódigo propuesto por mi persona para obtener números primos.
+```sh
+[variables]
+n : entero
+i : entero
+x: entero
+inicio
+  i: = 2
+  mientras (i < n)
+    If (i < n**0.5) hacer
+      (residuo de n/i)
+         If hay residuo de n/i
+           (n no es un número primo)
+         else hacer
+           (i = i + 1)
+         Fin mientras  
+    else
+      (n es un número primo)
+fin      
 ```
 
-```mermaid
-graph TD
-A[Hallar la raíz cuadrada de un número] --> B[Separa los dígitos en dos]
-B --> C[jaja]
+Ahora el algoritmo presentado anteriormente para hallar números primos se mostrará en forma de diagrama de flujo
