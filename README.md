@@ -62,3 +62,19 @@ inicio
    mientras (condición no se cumpla) hacer
      instrucciones a repetir
 ```
+
+Ahora bien al igual que para hallar números primos, se presenta el diagrama de flujo en cual se evidencian los pasos a seguir para encontrar raices cuadradas usando el método de sucesiones.
+
+```mermaid
+flowchart TD
+    A(Hallar la raíz cuadrada de un número) --> B[agrupar de a dos dígitos las cifras del radicando]
+    B --> C[el número que el cuadrado se aproxime al primer par sin pasarse se ubica en la raíz]
+    C --> D[restamos el cuadrado del primer número de la raízcon la primer pareja]
+    D --> E{Hay residuo?}
+    E --> |no| P(Raíz cuadrada hallada)
+    E --> |si| F[se escribe el doble de la raíz en un nuevo renglón y se bajan los siguientes dígitos]
+    F --> G[buscar un número que contenga el primer dígito del segundo renglón y que al multiplicarlo por el segundo se aproxime por abajo al residuo]
+    G --> U[se resta con el residuo]
+    U --> H{Hay residuo?}
+    H --> |no| P
+    H --> |si| F 
